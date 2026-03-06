@@ -17,6 +17,8 @@ Ranking of my hobbies:
 
 *Here is my LinkedIn profile:* [LinkedIn](https://www.linkedin.com/in/leweizhou-2b6572365/?locale=en-US)
 
-A meme that captures how I currently feel about my university studies is ![](https://c.tenor.com/8druEACXtX8AAAAd/tenor.gif)
+A meme that captures how I currently feel about my university studies is 
+![](https://c.tenor.com/8druEACXtX8AAAAd/tenor.gif)
 
-A meme that captures how I currently feel about this course is ![](https://giphy.com/gifs/japan-link-nintendo-switch-xUNd9ErVTxvYoQmR0s)
+A meme that captures how I currently feel about this course is 
+![](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExdTY2c3N3dW15bm5zajNlc3pleWV1ZjVreHFkYmlnOHpmY3JhdzJscCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xUNd9ErVTxvYoQmR0s/giphy.gif)
