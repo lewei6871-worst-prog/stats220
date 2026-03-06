@@ -4,13 +4,13 @@
 
 ## Self-Introduction
 
-A little about me:
+**A little about me:**
 
 * I am undertaking a degree in Data science(specialisation).
 * I am taking STATS 220 because this is my composory courses.
 * I am interested in learning about Machine learning.
 
-Ranking of my hobbies:
+**Ranking of my hobbies:**
 1. I am a French horn player.
 2. Table tennis.
 3. Playing all kinds of games.
