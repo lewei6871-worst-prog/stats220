@@ -1,0 +1,89 @@
+---
+title: My dynamic report
+output: html_fragment
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo=FALSE, message=FALSE, warning=FALSE, error=FALSE)
+library(tidyverse)
+```
+
+```{css}
+p {
+  font-weight: bold;background-color: #ADD8E6;
+}
+
+body{
+  background-color: #ADD8E6
+}
+
+h2{
+  font-weight: bold; color: #00008B
+}
+```
+
+## Music preference survey
+
+This survey is designed to look deeply on people's music preferences(especially people aged between 20 to 30) and how much time does people listening to music per day. We want to analysis the following questions:
+
+- Does most people love listening to music?
+- What is the most populat music types?
+- How much time people spent on listing to music?
+
+```{r, echo=FALSE}
+#load the data
+logged_data = read_csv('https://docs.google.com/spreadsheets/d/e/2PACX-1vSeTaMapSR2VHCAP8qfTxCJleSOXvVkKxXrTyVQQY8Fpq5JtknCku4HRoRvbhr3bp1-Ul6CLXK-KG7Q/pub?output=csv')
+
+# rename the data
+latest_data = logged_data %>%
+  rename(time = 1, 
+         like_music = 2, 
+         type_music = 3, 
+         hours_per_day = 4)
+```
+
+```{r}
+# check the rows of data
+paste('We collected', length(latest_data$time), 'of responses in total.')
+```
+
+
+```{r, echo=FALSE}
+# check the max value of time
+paste('People spent with a maximum', max(latest_data$hours_per_day), 'hours a day listening to music.')
+```
+
+```{r}
+# check the min value of time
+paste('People spent with a minimum', min(latest_data$hours_per_day) , 'hours a day listening to music.')
+```
+
+
+```{r, echo=FALSE}
+# check the average value of time
+paste('On average, People spent', mean(latest_data$hours_per_day), 'hours a day listening to music.')
+```
+
+
+```{r, echo=FALSE}
+# generate plots
+ggplot(data = latest_data) +
+  geom_bar(aes(x = like_music)) + 
+  labs(title = "The counts of preferences of music(yes/no)",
+       x = "Do you like music?",
+       y = "Number of people")
+```
+
+
+```{r, echo=FALSE}
+latest_data %>%
+  ggplot() +
+  geom_bar(aes(y = type_music),
+           fill = "#B2C248") + 
+  labs(title = "The distribution of preferences of different types of music",
+                                    x = "Number of people",
+                                    y = "Music types")
+```
+
+
+
